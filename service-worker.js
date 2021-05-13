@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.be1bad387758e69e60440e85cb23f89d.js"
+  "/precache-manifest.dc43251dfc5464af600413671b36c411.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "vue-atlal"});
@@ -33,4 +33,4 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerRoute(/^http:\/\/www\.omdbapi\.com\/\?apikey=8e38a46a&t=.*$/, new workbox.strategies.NetworkFirst({ "networkTimeoutSeconds":5, plugins: [] }), 'GET');
+workbox.routing.registerRoute(/^https:\/\/www\.omdbapi\.com\/\?apikey=8e38a46a&t=.*$/, new workbox.strategies.NetworkFirst({ "networkTimeoutSeconds":5, plugins: [] }), 'GET');
